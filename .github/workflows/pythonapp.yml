@@ -34,6 +34,18 @@ jobs:
         echo "Mulai format otomatis"
         isort . --profile=black
         black .
+    - name: Cek modifikasi file
+      id: git-check
+      run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "tidak"; else echo "ya"; fi)
+    - name: Push perubahan
+      if: steps.git-check.outputs.modified == 'ya' && github.event_name == 'push'
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git pull
+        git commit -am "style: format otomatis dengan black dan isort"
+        git push
     - name: Test Python
       run: |
         echo "Mulai Jalankan testing docstring"
@@ -46,17 +58,6 @@ jobs:
       run: |
         echo "Mulai Jalankan testing mypy"
         mypy .
-    - name: Cek modifikasi file
-      id: git-check
-      run: echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "tidak"; else echo "ya"; fi)
-    - name: Push perubahan
-      if: steps.git-check.outputs.modified == 'ya' && github.event_name == 'push'
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-        git commit -am "style: format otomatis dengan black dan isort"
-        git push
     - name: Test coverage
       run: |
         echo "Mulai testing coverage"
@@ -65,3 +66,4 @@ jobs:
       run: |
         echo "Laporan coverage"
         coverage report -m
+        
