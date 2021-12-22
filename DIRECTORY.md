@@ -68,6 +68,9 @@
     * [Kalkulator Fungsi](https://github.com/bellshade/Python/blob/main/Basic/23_kalkulator_dengan_fungsi/kalkulator_fungsi.py)
   * 24 Casting Tipe Data
     * [Casting Tipe Data](https://github.com/bellshade/Python/blob/main/Basic/24_casting_tipe_data/casting_tipe_data.py)
+  * 25 List And Dict Comprehension
+    * [Dict Comprehension](https://github.com/bellshade/Python/blob/main/Basic/25_list_and_dict_comprehension/dict_comprehension.py)
+    * [List Comprehension](https://github.com/bellshade/Python/blob/main/Basic/25_list_and_dict_comprehension/list_comprehension.py)
   * [Introduction](https://github.com/bellshade/Python/blob/main/Basic/Introduction.py)
 
 ## Algorithm
@@ -140,6 +143,8 @@
     * [Diophantine Equation](https://github.com/bellshade/Python/blob/main/implementation/blockchain/diophantine_equation.py)
     * [Modular Division](https://github.com/bellshade/Python/blob/main/implementation/blockchain/modular_division.py)
   * Celular Automata
+    * [Game Of Life](https://github.com/bellshade/Python/blob/main/implementation/celular_automata/game_of_life.py)
+    * [Nagel Schrekenberg](https://github.com/bellshade/Python/blob/main/implementation/celular_automata/nagel_schrekenberg.py)
     * [One Dimensional](https://github.com/bellshade/Python/blob/main/implementation/celular_automata/one_dimensional.py)
   * Chiper
     * [Affine](https://github.com/bellshade/Python/blob/main/implementation/chiper/affine.py)
@@ -204,6 +209,9 @@
   * [Segmented Sieve](https://github.com/bellshade/Python/blob/main/math/segmented_sieve.py)
   * [Sigmoid](https://github.com/bellshade/Python/blob/main/math/sigmoid.py)
   * [Simpson](https://github.com/bellshade/Python/blob/main/math/simpson.py)
+  * [Sock Merchant](https://github.com/bellshade/Python/blob/main/math/sock_merchant.py)
+  * [Softmax](https://github.com/bellshade/Python/blob/main/math/softmax.py)
+  * [Sum Geometric Progression](https://github.com/bellshade/Python/blob/main/math/sum_geometric_progression.py)
   * [Sylvester Sequence](https://github.com/bellshade/Python/blob/main/math/sylvester_sequence.py)
   * [Teorema Pytaghoras](https://github.com/bellshade/Python/blob/main/math/teorema_pytaghoras.py)
   * [Trapezoid](https://github.com/bellshade/Python/blob/main/math/trapezoid.py)
@@ -214,16 +222,35 @@
   * [Volume](https://github.com/bellshade/Python/blob/main/math/volume.py)
   * [Zellers Congruence](https://github.com/bellshade/Python/blob/main/math/zellers_congruence.py)
 
+## Object Oriented Programming
+  * Basic Oop
+    * 01 Atribut Kelas
+      * [Atribut Kelas](https://github.com/bellshade/Python/blob/main/object_oriented_programming/basic_oop/01_atribut_kelas/atribut_kelas.py)
+  * Intermediate
+    * Abstraksi
+      * [Abstraksi](https://github.com/bellshade/Python/blob/main/object_oriented_programming/intermediate/abstraksi/abstraksi.py)
+    * Encapsulation
+      * [Encapsulation](https://github.com/bellshade/Python/blob/main/object_oriented_programming/intermediate/encapsulation/encapsulation.py)
+      * [Encapsulation2](https://github.com/bellshade/Python/blob/main/object_oriented_programming/intermediate/encapsulation/encapsulation2.py)
+    * Inheritance
+      * [Inheritance](https://github.com/bellshade/Python/blob/main/object_oriented_programming/intermediate/inheritance/inheritance.py)
+
 ## Other
-  * [Palindrom](https://github.com/bellshade/Python/blob/main/other/Palindrom.py)
   * [Anagramcheck](https://github.com/bellshade/Python/blob/main/other/anagramCheck.py)
   * [Date To Weekday](https://github.com/bellshade/Python/blob/main/other/date_to_weekday.py)
   * [Doomsday Alg](https://github.com/bellshade/Python/blob/main/other/doomsday_alg.py)
+  * [Hex To Rgb](https://github.com/bellshade/Python/blob/main/other/hex_to_rgb.py)
+  * [Is Palindrom](https://github.com/bellshade/Python/blob/main/other/is_palindrom.py)
   * [Power Dac](https://github.com/bellshade/Python/blob/main/other/power_dac.py)
+  * [Rgb To Hex](https://github.com/bellshade/Python/blob/main/other/rgb_to_hex.py)
   * [Tower Of Hanoi](https://github.com/bellshade/Python/blob/main/other/tower_of_hanoi.py)
 
 ## Struktur Data
+  * [Doubly Linked List](https://github.com/bellshade/Python/blob/main/struktur_data/doubly_linked_list.py)
   * [Singly Linked List](https://github.com/bellshade/Python/blob/main/struktur_data/singly_linked_list.py)
 
 ## Web Programming
+  * [Breadcrumb Generator](https://github.com/bellshade/Python/blob/main/web_programming/breadcrumb_generator.py)
+  * [Get Random Quote](https://github.com/bellshade/Python/blob/main/web_programming/get_random_quote.py)
+  * [Pagination Helper](https://github.com/bellshade/Python/blob/main/web_programming/pagination_helper.py)
   * [Statik Corona](https://github.com/bellshade/Python/blob/main/web_programming/statik_corona.py)
