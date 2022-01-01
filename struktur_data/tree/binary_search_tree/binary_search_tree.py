@@ -24,6 +24,17 @@ class BinarySearchTree:
                 # rekursif melalui atribut right
                 self.right.insert(new_data)
 
+    def delete(self, key):
+        if key < self.data:
+            self.left = self.left.delete(key)
+        elif key > self.data:
+            self.right = self.right.delete(key)
+        else:
+            if self.left is None :
+                return self.right
+            elif self.right is None:
+                return self.left
+
     def preorder(self, arr: list = []):
         # Algoritma preorder adalah sebagai berikut:
         # 1. Append data pada node
@@ -76,3 +87,12 @@ if __name__ == "__main__":
     postorder_result = root.postorder()
     # menghasilkan [4, 3, 11, 5]
     print(postorder_result)
+    root.delete(3)
+    preorder_result = root.preorder()
+    print(preorder_result)
+
+"""
+Referensi :
+1. https://www.w3resource.com/python-exercises/data-structures-and-algorithms/python-binary-search-tree-exercise-4.php
+2. dev.to/karthik2265/binary-tree-and-binary-search-tree-implementation-in-python-2878
+"""
